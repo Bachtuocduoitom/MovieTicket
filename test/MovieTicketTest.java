@@ -5,7 +5,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.util.Locale;
+
 
 
 import static org.junit.Assert.*;
@@ -15,25 +15,6 @@ public class MovieTicketTest {
     InputStream stdin = System.in;
     PrintStream stdout = System.out;
 
-    /*@Test
-    public void testMain() throws InterruptedException {
-        InputStream stdin = System.in;
-        System.setIn(new ByteArrayInputStream("man\n175\n".getBytes()));
-
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        PrintStream ps = new PrintStream(byteArrayOutputStream);
-        PrintStream stdout = System.out;
-        System.setOut(ps);
-
-        MovieTicket.main(new String[0]);
-        System.setIn(stdin);
-        System.setOut(stdout);
-
-        String outputText = byteArrayOutputStream.toString();
-        String key = "Height: ";
-        String output = outputText.substring(outputText.indexOf(key) + key.length()).trim();
-        Assert.assertEquals("No discount", output);
-    }*/
 
     @Test
     public void testCase1() throws InterruptedException {
