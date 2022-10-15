@@ -10,9 +10,9 @@ public class MovieTicket {
     public static void main(String[] args) throws InterruptedException {
         Scanner scan = new Scanner(System.in);
 
+
         while (scan.hasNext()) {
             Thread.sleep(200);
-            System.out.println("Gender: ");
             String type = scan.next();
             double height;//by centimeters
 

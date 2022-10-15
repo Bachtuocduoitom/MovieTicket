@@ -29,9 +29,7 @@ public class MovieTicketTest {
         System.setOut(stdout);
 
         String outputText = byteArrayOutputStream.toString().trim();
-        String key = "Gender: ";
-        String output = outputText.substring(outputText.indexOf(key) + key.length()).trim();
-        Assert.assertEquals("Free", output);
+        Assert.assertEquals("Free", outputText);
     }
 
     @Test
