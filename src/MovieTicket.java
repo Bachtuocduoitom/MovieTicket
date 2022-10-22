@@ -13,10 +13,10 @@ public class MovieTicket {
 
         while (scan.hasNext()) {
             Thread.sleep(200);
-            String type = scan.next();
+            String gender = scan.next();
             double height;//by centimeters
 
-            switch (type) {
+            switch (gender) {
                 case CHILDREN -> {
                     System.out.println("Free" + "\n");
                 }
@@ -30,7 +30,7 @@ public class MovieTicket {
                     height = scan.nextDouble();
                     System.out.println(womanPrice(height) + "\n");
                 }
-                default -> throw new IllegalArgumentException("unknown type " + "\"" + type + "\"");
+                default -> throw new IllegalArgumentException("unknown type " + "\"" + gender + "\"");
 
             }
         }
